@@ -1,4 +1,4 @@
-import sys
+# coding: utf-8
 
 from kyoho.argparse import parse_args
 

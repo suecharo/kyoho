@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    # image: suecharo/kyoho:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kyoho
+    restart: always
+    working_dir: /app
+    command: ["kyoho"]

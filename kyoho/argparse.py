@@ -1,7 +1,8 @@
-from argparse import ArgumentParser
+from argparse import ArgumentParser, Namespace
+from typing import List
 
 
-def parse_args():
+def parse_args(inputted_args: List[str]) -> Namespace:
     parser = ArgumentParser(
         description="Test library for building python package.")
 
@@ -11,6 +12,6 @@ def parse_args():
         help="Input YAML file"
     )
 
-    args = parser.parse_args()
+    args = parser.parse_args(inputted_args)
 
     return args
